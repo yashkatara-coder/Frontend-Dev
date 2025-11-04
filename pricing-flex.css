@@ -1,0 +1,10 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial;background:#f7f9fc;padding:3rem;display:flex;justify-content:center;align-items:center;min-height:100vh}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.pricing{display:flex;gap:1rem;align-items:flex-start}
+.card{background:#fff;padding:1.5rem;border-radius:10px;width:240px;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.06);transition:transform .3s;animation:fadeIn .6s ease both}
+.card:hover{transform:translateY(-10px)}
+.featured{transform:scale(1.05);background:#f0f7ff;border:2px solid #2b7be3}
+.price{font-weight:700;margin:1rem 0}
+.btn{display:inline-block;padding:.5rem 1rem;background:#0b76d1;color:#fff;border-radius:6px;text-decoration:none;margin-top:.5rem}
+@media (max-width:750px){.pricing{flex-direction:column;align-items:center}.card{width:90%}}
