@@ -1,0 +1,21 @@
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:#f6f9fc;display:flex;align-items:center;justify-content:center;font-family:Inter,Arial}
+.anim-wrap{display:flex;gap:1.25rem}
+.anim{width:90px;height:90px;border-radius:12px;background:#0b76d1;box-shadow:0 10px 30px rgba(11,119,209,.12)}
+/* Moving box (left-right) */
+@keyframes slideX{0%{transform:translateX(-12px)}50%{transform:translateX(12px)}100%{transform:translateX(-12px)}}
+.move{animation:slideX 1.6s ease-in-out infinite}
+
+/* Bouncing ball (up-down) */
+@keyframes bounceY{0%{transform:translateY(0)}50%{transform:translateY(-28px)}100%{transform:translateY(0)}}
+.bounce{background:#ff6a00;border-radius:50%;animation:bounceY .9s cubic-bezier(.2,.8,.2,1) infinite}
+
+/* Color changing (infinite) */
+@keyframes colorShift{0%{background:#0b76d1}50%{background:#2d9f5f}100%{background:#0b76d1}}
+.color{animation:colorShift 2.2s ease-in-out infinite}
+
+/* animation delays & properties */
+.move{animation-delay:.1s}
+.bounce{animation-delay:.2s;animation-iteration-count:infinite}
+.color{animation-delay:.3s}
+@media (max-width:520px){.anim-wrap{flex-direction:column;align-items:center}}

@@ -1,0 +1,32 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:#f8fafc}
+.center{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem}
+.btn-row{display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center;padding:1rem}
+
+/* Base button */
+.btn{padding:.6rem 1rem;border-radius:8px;border:2px solid transparent;cursor:pointer;transition:all .2s;box-shadow:0 6px 18px rgba(2,6,23,.06);font-weight:600;background:#fff}
+
+/* Primary */
+.btn.primary{background:#0b76d1;color:#fff;border-color:#0b76d1}
+.btn.primary:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(11,119,209,.18)}
+.btn.primary:active{transform:translateY(0)}
+
+/* Secondary */
+.btn.secondary{background:#fff;color:#0b76d1;border-color:#dbeafe}
+.btn.secondary:hover{background:#eef6ff}
+
+/* Outline */
+.btn.outline{background:transparent;border-color:#0b76d1;color:#0b76d1}
+.btn.outline:hover{background:rgba(11,119,209,.06)}
+
+/* Disabled */
+.btn[disabled]{opacity:.5;cursor:not-allowed;box-shadow:none}
+
+/* Focus */
+.btn:focus{outline:4px solid rgba(11,119,209,.12);outline-offset:3px}
+
+/* Accessibility demo */
+.focus-demo:focus{background:#fffae6;border-color:#ffd54d}
+
+/* Responsive */
+@media (max-width:520px){.btn-row{flex-direction:column;align-items:center}}

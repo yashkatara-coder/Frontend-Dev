@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Selectors Practice</title>
+  <link rel="stylesheet" href="selectors-practice.css"/>
+</head>
+<body>
+  <header><h1>CSS Selectors</h1></header>
+  <main class="container">
+    <section>
+      <h2>Element selector</h2>
+      <p>This paragraph styled by element selector (p).</p>
+    </section>
+
+    <section>
+      <h2>Class selector</h2>
+      <p class="highlight">This paragraph uses .highlight class.</p>
+    </section>
+
+    <section>
+      <h2>ID selector</h2>
+      <p id="unique">This uses #unique id selector.</p>
+    </section>
+
+    <section>
+      <h2>Attribute selector</h2>
+      <a href="https://example.com">secure link</a>
+      <a href="mailto:someone@example.com">email link</a>
+    </section>
+
+    <section>
+      <h2>Combinators</h2>
+      <div class="parent">
+        <p>Child &gt; selector example</p>
+        <p class="sibling">Next sibling + selector example</p>
+        <p class="later">Later sibling ~ selector example</p>
+      </div>
+    </section>
+  </main>
+  <footer>© Selectors</footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Box Sizing Comparison</title>
+  <link rel="stylesheet" href="box-sizing-compare.css"/>
+</head>
+<body>
+  <main class="compare">
+    <div class="box default">
+      <h3>default (content-box)</h3>
+      <p>width: 200px; padding: 20px; border: 10px solid #0b76d1</p>
+    </div>
+
+    <div class="box borderbox">
+      <h3>border-box</h3>
+      <p>box-sizing: border-box; width: 200px; padding: 20px; border: 10px solid #0b76d1</p>
+    </div>
+  </main>
+  <section class="note"><p>Notice: border-box includes padding and border in the width calculation.</p></section>
+</body>
+</html>

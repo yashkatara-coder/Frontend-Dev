@@ -1,0 +1,16 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:#f7fafc;color:#111}
+.center{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem}
+h1{margin:0 0 .5rem 0}
+.icons{display:flex;gap:2rem;align-items:center}
+
+/* Tooltip item */
+.tt-item{position:relative;display:flex;align-items:center;justify-content:center}
+.icon{font-size:2rem;padding:1rem;border-radius:10px;background:#fff;box-shadow:0 6px 18px rgba(2,6,23,.06);cursor:default}
+
+/* Tooltip box */
+.tooltip{position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%);white-space:nowrap;padding:.5rem .75rem;border-radius:6px;background:#0b3d91;color:#fff;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
+.tt-item:hover .tooltip{opacity:1;transform:translateX(-50%) translateY(-6px)}
+
+/* Make sure tooltip fits on small screens */
+@media (max-width:420px){.icons{gap:1rem}.tooltip{font-size:.8rem;padding:.4rem .6rem}}

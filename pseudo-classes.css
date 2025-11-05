@@ -1,0 +1,29 @@
+/* Layout */
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:#f6f8fb;color:#111}
+header{background:#0b3d91;color:#fff;padding:1rem;text-align:center}
+footer{text-align:center;padding:1rem;background:#0b3d91;color:#fff}
+
+.wrap{display:flex;flex-wrap:wrap;gap:1rem;padding:2rem;justify-content:center}
+.example{background:#fff;padding:1.25rem;border-radius:10px;min-width:220px;max-width:320px;box-shadow:0 6px 18px rgba(11,61,145,.08)}
+
+/* Links */
+a{color:#0b76d1;text-decoration:none;border-bottom:2px solid transparent;transition:all .2s}
+a:hover{color:#ff6a00;border-bottom-color:#ff6a00}
+
+/* Buttons */
+.btn{padding:.6rem 1rem;border-radius:8px;border:2px solid #0b76d1;background:#fff;color:#0b76d1;cursor:pointer;transition:transform .08s,box-shadow .08s}
+.btn:active{transform:translateY(2px);box-shadow:none}
+
+/* Inputs */
+input[type="text"]{padding:.6rem;border-radius:8px;border:1px solid #cbd5e1;transition:box-shadow .15s}
+input[type="text"]:focus{outline:none;box-shadow:0 0 0 4px rgba(11,119,209,.12)}
+
+/* List nth-child */
+.demo-list{padding-left:1.1rem}
+.demo-list li{padding:.35rem 0}
+.demo-list li:nth-child(odd){background:linear-gradient(90deg,#fff,#f8fafc)}
+.demo-list li:nth-child(2){font-weight:700}
+
+/* Responsive */
+@media (max-width:700px){.wrap{flex-direction:column;align-items:center}}

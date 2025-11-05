@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pseudo-Classes Demo</title>
+  <link rel="stylesheet" href="pseudo-classes.css" />
+</head>
+<body>
+  <header><h1>Pseudo-Classes</h1></header>
+
+  <main class="wrap">
+    <section class="example">
+      <h2>Links (:hover)</h2>
+      <p><a href="#">Hover this link</a></p>
+      <p class="note">:hover — when pointer is over element</p>
+    </section>
+
+    <section class="example">
+      <h2>Button (:active)</h2>
+      <p><button class="btn">Click me</button></p>
+      <p class="note">:active — while the element is being activated</p>
+    </section>
+
+    <section class="example">
+      <h2>Input (:focus)</h2>
+      <p><input type="text" placeholder="Focus here" /></p>
+      <p class="note">:focus — when input is focused</p>
+    </section>
+
+    <section class="example">
+      <h2>List (:nth-child)</h2>
+      <ul class="demo-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+      <p class="note">:nth-child(odd) highlights odd items</p>
+    </section>
+  </main>
+
+  <footer>© 2025 Demo</footer>
+</body>
+</html>
