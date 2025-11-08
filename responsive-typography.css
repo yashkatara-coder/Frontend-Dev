@@ -1,0 +1,6 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,serif;background:#fff;color:#0b1726;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:2rem}
+.typography{max-width:900px;text-align:center;padding:2rem}
+h1{font-size:clamp(1.5rem,4vw,3rem);margin-bottom:1rem}
+p{font-size:clamp(1rem,2vw,1.5rem);line-height:1.7;margin:0 auto;color:#334155}
+@media (max-width:700px){p{line-height:1.5;padding:0 .5rem}}

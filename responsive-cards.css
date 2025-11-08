@@ -1,0 +1,8 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial;display:flex;align-items:center;justify-content:center;min-height:100vh;background:#f6f8fb}
+.cards-wrap{display:flex;gap:1rem;flex-wrap:wrap;padding:1rem;max-width:1200px}
+.card{flex:1 1 calc(25% - 1rem);background:#fff;padding:1.25rem;border-radius:10px;box-shadow:0 8px 20px rgba(2,6,23,.06);text-align:center;transition:background .25s,transform .25s}
+.card:hover{background:linear-gradient(180deg,#fff,#f0f7ff);transform:translateY(-6px)}
+/* breakpoints */
+@media (max-width:900px){.card{flex:1 1 calc(50% - 1rem)}}
+@media (max-width:600px){.card{flex:1 1 100%}}
