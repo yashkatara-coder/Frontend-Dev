@@ -34,7 +34,7 @@ form.addEventListener("submit", (e) => {
 form.addEventListener("input", (e) => {
   const id = e.target.id;
 
-  if (id === "name") nameErr.textContent = "";
-  if (id === "email") emailErr.textContent = "";
+  if (id === "name") nameErr.textContent = ""; 
+  if (id === "email") emailErr.textContent = ""; 
   if (id === "pass") passErr.textContent = "";
 });
