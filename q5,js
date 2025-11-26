@@ -1,0 +1,17 @@
+$("#add").click(function () {
+  const text = $("#taskInput").val().trim();
+  if (!text) return;
+
+  const item = $(`<div class='task'><span>${text}</span><button class='remove'>X</button></div>`);
+
+  item.find("span").click(function () {
+    $(this).toggleClass("done");
+  });
+
+  item.find(".remove").click(function () {
+    item.remove();
+  });
+
+  $("#list").append(item);
+  $("#taskInput").val("");
+});

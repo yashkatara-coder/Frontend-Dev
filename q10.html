@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cart</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    .item { margin: 10px 0; }
+    button { margin: 0 5px; }
+  </style>
+</head>
+<body>
+  <div class="item" data-price="200">
+    Item A — ₹200
+    <button class="minus">-</button>
+    <span class="qty">1</span>
+    <button class="plus">+</button>
+  </div>
+
+  <div class="item" data-price="100">
+    Item B — ₹100
+    <button class="minus">-</button>
+    <span class="qty">1</span>
+    <button class="plus">+</button>
+  </div>
+
+  <h3>Total: ₹<span id="total"></span></h3>
+
+  <script src="q10.js"></script>
+</body>
+</html>
