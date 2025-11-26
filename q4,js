@@ -1,0 +1,17 @@
+async function loadDashboard() {
+  try {
+    const [u, o, p] = await Promise.all([
+      fetch("http://localhost:3004/users").then(r => r.json()),
+      fetch("http://localhost:3004/orders").then(r => r.json()),
+      fetch("http://localhost:3004/products").then(r => r.json())
+    ]);
+
+    document.getElementById("users").textContent = `Total Users: ${u.length}`;
+    document.getElementById("orders").textContent = `Total Orders: ${o.length}`;
+    document.getElementById("products").textContent = `Total Products: ${p.length}`;
+  } catch {
+    document.getElementById("warning").textContent = "Some data could not be loaded.";
+  }
+}
+
+loadDashboard();
