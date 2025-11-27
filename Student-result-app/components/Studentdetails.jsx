@@ -1,0 +1,16 @@
+import React from "react";
+
+export default function StudentDetails({ student, onBack }) {
+  return (
+    <div className="card">
+      <h2>Student Details</h2>
+
+      <p><b>Name:</b> {student.name}</p>
+      <p><b>Section:</b> {student.section}</p>
+      <p><b>Marks:</b> {student.marks}</p>
+      <p><b>Grade:</b> {student.grade}</p>
+
+      <button onClick={onBack}>Back</button>
+    </div>
+  );
+}
